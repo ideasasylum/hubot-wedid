@@ -25,7 +25,7 @@ module.exports = (robot) ->
   robot.respond /I (did|\w+ed) (.+)/i, (msg) ->    
     idid = msg.match[2]
     add 'did', idid, msg.message.user.name
-    msg.send ":confetti: Well done!"
+    msg.send ":tada: Well done!"
     
   robot.respond /what.*/i, (msg) ->
     summary_message = summary()
